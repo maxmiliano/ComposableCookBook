@@ -1,3 +1,4 @@
 <resources>
-  <string name="app_name">ComposableCookBook</string>
+    <string name="app_name">ComposableCookBook</string>
+    <string name="title_activity_compose">ComposeActivity</string>
 </resources>
