@@ -3,6 +3,7 @@ package com.raywenderlich.android.composableCookBook
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.compose.*
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
@@ -21,7 +22,12 @@ class MainActivity : AppCompatActivity() {
   @Composable
   @Preview
   fun Greeting() {
-    Text("Hello, World!", style = TextStyle(color = Color.Green))
+    Column {
+      Text("Hello, World!", style = TextStyle(color = Color.Green))
+      Text("Hello, Second World!", style = TextStyle(color = Color.Blue))
+      Text("Hello, Third World!", style = TextStyle(color = Color.Red))
+    }
+
   }
 
 }
