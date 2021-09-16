@@ -17,9 +17,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun RecipeCard(recipe: Recipe) {
+fun RecipeCard(recipe: Recipe, modifier: Modifier) {
     
-    Surface(shape = RoundedCornerShape(8.dp), elevation = 8.dp) {
+    Surface(shape = RoundedCornerShape(8.dp), elevation = 8.dp, modifier = modifier) {
 
         val painter = painterResource(recipe.imageResource)
 
@@ -43,5 +43,5 @@ fun RecipeCard(recipe: Recipe) {
 @Composable
 @Preview
 fun DefaultRecipeCard() {
-    RecipeCard(recipe = defaultRecipes[0])
+    RecipeCard(recipe = defaultRecipes[0], Modifier.padding(16.dp))
 }
